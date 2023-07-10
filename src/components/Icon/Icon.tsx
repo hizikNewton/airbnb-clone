@@ -1,0 +1,27 @@
+
+import React, { FC } from "react"
+import { Globe, Search } from "assets/images/icons"
+import { IconType } from "types"
+
+interface IconProps extends React.HTMLAttributes<HTMLElement> {
+  name: IconType
+  width?: number
+  height?: number
+  fill?: string
+}
+export const Icons = {
+  search: <Search />,
+  globe: <Globe />
+};
+const Icon: FC<IconProps> = ({ name, width = 20, height = 20, fill = "#5D6C76" }) => {
+  // Import or define your SVG icons as React components
+
+
+  return (
+    <>
+      {Icons[name] ? React.cloneElement(Icons[name], { fill, width, height }) : null}
+    </>
+  );
+};
+
+export default Icon
