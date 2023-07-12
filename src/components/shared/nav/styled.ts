@@ -52,6 +52,9 @@ export const StyledNavOption = styled.div`
     gap: 8px;
   }
   label {
+    input{
+      visibility:hidden;
+    }
   }
   .chipset {
     display: flex;
@@ -60,10 +63,19 @@ export const StyledNavOption = styled.div`
     align-items: center;
     gap: 8px;
     img {
-      filter: invert(0.5);
-      &:hover {
-        filter: none;
+      opacity: 0.69;
+      
+    }
+    &:hover{
+      img{
+      opacity:1;
       }
+        font-weight:600;
+        cursor:pointer;
+      }
+    .isActive{
+      font-weight:600
+      
     }
   }
   .active {

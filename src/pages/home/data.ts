@@ -5,6 +5,7 @@ export const cardItems = [
         imageSrc:
           'https://a0.muscache.com/im/pictures/miso/Hosting-47025046/original/4d713a1e-ab4c-4d70-905f-d24b4042189f.jpeg?im_w=720',
         imageAlt: 'listingCard1',
+        
       },
       {
         imageSrc:
