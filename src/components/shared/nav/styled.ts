@@ -15,8 +15,22 @@ export const NavAndFilter = styled.div`
 `;
 
 export const NavCategoryContainer = styled.div`
-  overflow-x: scroll;
+overflow:hidden;
   flex: 1;
+  ::-webkit-scrollbar {
+    width: 0;
+    display:none
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
 `;
 
 export const NavCategory = styled.div`

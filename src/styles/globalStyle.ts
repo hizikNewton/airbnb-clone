@@ -35,10 +35,7 @@ ${normalize}
        .home_card{
     --breakpoint-grid_columns: 6;}
   }
- 
-  
- 
-  
+
 }
  
 @font-face {

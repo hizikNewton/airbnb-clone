@@ -1,9 +1,8 @@
-import React, { FC } from 'react'
-import { CardContainer, Picture, PictureContainer, PictureDescContainer, TextContainer } from './styled'
+import  { FC } from 'react'
+import { CardContainer, PictureContainer, TextContainer } from './styled'
 import Swiper from 'components/swiper'
 import { CardItemType } from 'types'
 import { ReactComponent as Star } from 'assets/images/icons/star.svg'
-import { Link, NavLink } from 'react-router-dom'
 
 interface CardProps {
     cardItem: CardItemType

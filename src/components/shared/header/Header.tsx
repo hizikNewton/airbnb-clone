@@ -19,7 +19,7 @@ const Header: FC = () => {
                 </div>
                 <div>
                     <Button text="Airbnb your home" customStyle={headerYourHome} />
-                    <Button iconName="globe" />
+                    <Button iconName="globe" customStyle={headerYourHome} />
                     <Dropdown options={dropdownoption} type="action" />
                 </div>
             </HeaderContainer>
