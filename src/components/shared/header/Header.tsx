@@ -1,7 +1,6 @@
 import { FC } from 'react'
-import { HeaderContainer } from './styled'
+import { HeaderContainer, headerYourHome } from './styled'
 import { ReactComponent as Logo } from "assets/images/logo.svg";
-import { ReactComponent as Search } from "assets/images/icons/searchIcon.svg";
 import Button from 'components/button';
 import Dropdown from 'components/dropDown';
 import { dropdownoption } from './data';
@@ -12,14 +11,14 @@ const Header: FC = () => {
         <Container>
             <HeaderContainer>
                 <div><Logo /></div>
-                <div>
-                    <span>Anywhere</span>
-                    <span>Any week</span>
-                    <span>Add guests</span>
-                    <div><Search /></div>
+                <div className='header_search'>
+                    <Button text='Anywhere' />
+                    <Button text="AnyWeek" />
+                    <Button text='Add Guest' />
+                    <Button iconName="search" />
                 </div>
                 <div>
-                    <Button text="Airbnb your home" />
+                    <Button text="Airbnb your home" customStyle={headerYourHome} />
                     <Button iconName="globe" />
                     <Dropdown options={dropdownoption} type="action" />
                 </div>

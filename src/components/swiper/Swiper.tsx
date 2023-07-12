@@ -3,6 +3,7 @@ import './styles.css';
 import { SwiperItemType } from 'types';
 import SwiperItem from './SwiperItem';
 import { getRefValue, useStateRef } from 'utils/hooks';
+import { Controller } from './styled';
 
 export type Props = {
     items: Array<SwiperItemType>;
@@ -111,6 +112,10 @@ function Swiper({ items }: Props) {
             onTouchStart={onTouchStart}
             onMouseDown={onTouchStart}
         >
+            <Controller >
+                <button> Next</button>
+                <button>Prev</button>
+            </Controller>
             <ul
                 ref={containerRef}
                 className={`swiper-list ${isSwiping ? 'is-swiping' : ''}`}

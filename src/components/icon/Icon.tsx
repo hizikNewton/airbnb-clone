@@ -8,18 +8,19 @@ interface IconProps extends React.HTMLAttributes<HTMLElement> {
   width?: number
   height?: number
   fill?: string
+  className?: string
 }
 export const Icons = {
   search: <Search />,
   globe: <Globe />
 };
-const Icon: FC<IconProps> = ({ name, width = 20, height = 20, fill = "#5D6C76" }) => {
+const Icon: FC<IconProps> = ({ name, width = 20, height = 20, fill = "#5D6C76", className }) => {
   // Import or define your SVG icons as React components
 
 
   return (
     <>
-      {Icons[name] ? React.cloneElement(Icons[name], { fill, width, height }) : null}
+      {Icons[name] ? React.cloneElement(Icons[name], { fill, width, height, className }) : null}
     </>
   );
 };

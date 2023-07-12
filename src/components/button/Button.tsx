@@ -6,12 +6,15 @@ import { IconType } from 'types'
 interface ButtonProps {
     text?: string
     iconName?: IconType
+    className?: string
+    customStyle?: any
+
 }
 
-const Button: FC<ButtonProps> = ({ text, iconName }) => {
+const Button: FC<ButtonProps> = ({ text, iconName, className, customStyle }) => {
     return (
-        <StyledButton>
-            {iconName && <Icon name={iconName} />}
+        <StyledButton className={className} customStyle={customStyle}>
+            {iconName && <Icon name={iconName} className={className} />}
             {text && <span>{text}</span>}
         </StyledButton>
     )

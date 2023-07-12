@@ -1,8 +1,9 @@
 import React, { FC } from 'react'
-import { CardContainer, Picture, PictureContainer, TextContainer } from './styled'
+import { CardContainer, Picture, PictureContainer, PictureDescContainer, TextContainer } from './styled'
 import Swiper from 'components/swiper'
 import { CardItemType } from 'types'
 import { ReactComponent as Star } from 'assets/images/icons/star.svg'
+import { Link, NavLink } from 'react-router-dom'
 
 interface CardProps {
     cardItem: CardItemType
@@ -13,6 +14,9 @@ const Card: FC<CardProps> = ({ cardItem }) => {
     return (
         <CardContainer>
 
+            <PictureContainer className='carousel-desc'>
+                <Swiper items={listingImages} />
+            </PictureContainer>
             <TextContainer>
                 <div className='listingName'>{listingName}</div>
                 <div className='listingWhere'>{listingHost}</div>
@@ -24,11 +28,6 @@ const Card: FC<CardProps> = ({ cardItem }) => {
                 </span>
 
             </TextContainer>
-            <PictureContainer>
-                <Picture className='picture'>
-                <Swiper items={listingImages} />
-                </Picture>
-            </PictureContainer>
         </CardContainer>
     )
 }

@@ -1,18 +1,20 @@
 import { styled } from 'styled-components';
 
-export const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column-reverse;
-`;
+export const CardContainer = styled.div``;
 
 export const PictureContainer = styled.div`
-border-radius: var(--border-radius);
-background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-color);
 `;
+export const PictureDescContainer = styled.div`
+  display: flex;
+  background: linear-gradient(180deg, transparent 80%, rgba(0, 0, 0, 0.25));
+`;
+
 export const TextContainer = styled.div`
   display: grid;
   gap: var(--card-content-grid_gap, var(--h-x-sf-jw));
-  grid-template-columns: minmax(0,1fr) max-content ;
+  grid-template-columns: minmax(0, 1fr) max-content;
 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -31,7 +33,7 @@ export const TextContainer = styled.div`
   .cost {
     margin-top: 6px;
     grid-column: 1 / -1;
-    span{
+    span {
       font-weight: 600;
       color: var(--color-bold);
     }
@@ -46,5 +48,5 @@ export const TextContainer = styled.div`
 `;
 
 export const Picture = styled.div`
-  
-`
+  height: 260px;
+`;

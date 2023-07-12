@@ -11,7 +11,6 @@ ${normalize}
 --breakpoint-grid_columns: 1;
 --card-content-grid_gap:2px 8px;
 --h-x-sf-jw:4px;
---color-light:#717171;
 --text-color-bold:#222222;
 --bg-color:#dddddd;
 --border-radius:12px;

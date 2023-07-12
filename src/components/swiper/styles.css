@@ -1,8 +1,9 @@
 .swiper-container {
-  width: 260px;
   max-width: 100%;
   overflow: hidden;
+  height: 260px;
   touch-action: pan-y;
+  position: relative;
 }
 
 .swiper-list {
@@ -24,6 +25,9 @@
   list-style: none;
   margin: 15px 0 0 0;
   padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .swiper-indicator-item {
