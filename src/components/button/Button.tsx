@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { StyledButton } from './styled'
-import Icon from 'components/Icon'
+import Icon from 'components/icon'
 import { IconType } from 'types'
 
 interface ButtonProps {

@@ -5,6 +5,39 @@ import Montserrat from 'assets/fonts/Montserrat-Regular.ttf';
 
 const GlobalStyles = createGlobalStyle`
 ${normalize}
+:root {
+--breakpoint-grid_column-gap: 24px;
+--breakpoint-grid_row-gap: 40px;
+--breakpoint-grid_columns: 1;
+--card-content-grid_gap:2px 8px;
+--h-x-sf-jw:4px;
+--color-light:#717171;
+--text-color-bold:#222222;
+
+  @media (min-width: 550px) {
+    .home_card {
+    --breakpoint-grid_columns: 2;
+  }} @media (min-width: 950px) {
+    .home_card {
+      --breakpoint-grid_columns: 3;
+    }
+  }@media (min-width: 1128px) {
+    .home_card {
+      --breakpoint-grid_columns: 4;
+    }
+  } @media (min-width: 1640px) {
+    .home_card {
+    --breakpoint-grid_columns: 5;
+  } }
+  @media (min-width: 1880px) {
+       .home_card{
+    --breakpoint-grid_columns: 6;}
+  }
+ 
+  
+ 
+  
+}
  
 @font-face {
 font-family: "Manrope";
@@ -24,7 +57,7 @@ body {
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
     background: #FAFAFE;
     @media (max-width: 480px) {

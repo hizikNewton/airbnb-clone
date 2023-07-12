@@ -1,5 +1,5 @@
 import { ReactComponent as Avatar } from "assets/images/Avatar.svg";
-import Icon from 'components/Icon';
+import Icon from 'components/icon';
 import React, { useEffect, useRef, useState } from 'react';
 import { DDOptionItem, DDOptions, DropDownContainer } from './styled';
 

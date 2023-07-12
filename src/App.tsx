@@ -1,5 +1,5 @@
 import Layout from 'components/shared/layout';
-import Dashboard from 'pages/dashboard';
+import Home from 'pages/home';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 
@@ -7,9 +7,9 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path={"dashboard"} element={<Dashboard />} />
+        <Route path={"home"} element={<Home />} />
         {/*  {nav.map(({ path, name }, idx) => <Route path={path} key={`${name}-${idx}`} element={<Home name={name} />} />)}
-         */}<Route path={"*"} element={<Navigate to="/dashboard" replace />} />
+         */}<Route path={"*"} element={<Navigate to="/home" replace />} />
       </Route>
     </Routes>
   );
