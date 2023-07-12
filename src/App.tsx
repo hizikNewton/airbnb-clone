@@ -10,8 +10,8 @@ function App() {
       <Route element={<Layout />}>
         <Route path={"home"} element={<Home />} />
         { navLinks.map( ({name,id}) => <Route path={name.toLowerCase()} key={`${name}-${id}`} element={<Home />}/>)}
-       {/*  <Route path={"*"} element={<Navigate to="/home" replace />} />
-      */} </Route>
+         <Route path={"*"} element={<Navigate to="/home" replace />} />
+      </Route>
     </Routes>
   );
 }
