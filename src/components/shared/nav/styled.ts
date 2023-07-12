@@ -15,22 +15,21 @@ export const NavAndFilter = styled.div`
 `;
 
 export const NavCategoryContainer = styled.div`
-overflow:hidden;
+  overflow: hidden;
   flex: 1;
   ::-webkit-scrollbar {
     width: 0;
-    display:none
+    display: none;
     background-color: transparent;
   }
-  
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: transparent;
   }
-  
 `;
 
 export const NavCategory = styled.div`
@@ -60,6 +59,16 @@ export const StyledNavOption = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    img {
+      filter: invert(0.5);
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+  .active {
+    border: 1px solid black;
+    width: 100%;
   }
 `;
 

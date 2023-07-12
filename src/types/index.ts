@@ -5,6 +5,7 @@ export type IconType = keyof typeof Icons;
 export interface NavOptionType {
   iconLink: string;
   name: string;
+  id?: number;
 }
 
 export type SwiperItemType = {
