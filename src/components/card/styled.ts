@@ -5,10 +5,15 @@ export const CardContainer = styled.div`
   flex-direction: column-reverse;
 `;
 
-export const PictureContainer = styled.div``;
+export const PictureContainer = styled.div`
+border-radius: var(--border-radius);
+background-color: var(--bg-color);
+`;
 export const TextContainer = styled.div`
   display: grid;
   gap: var(--card-content-grid_gap, var(--h-x-sf-jw));
+  grid-template-columns: minmax(0,1fr) max-content ;
+
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
@@ -16,7 +21,6 @@ export const TextContainer = styled.div`
   .listingName {
     font-weight: 600;
     color: var(--color-bold);
-    grid-column: 1 / -1;
     display: -webkit-box;
     -webkit-box-orient: vertical;
   }
@@ -26,6 +30,11 @@ export const TextContainer = styled.div`
   }
   .cost {
     margin-top: 6px;
+    grid-column: 1 / -1;
+    span{
+      font-weight: 600;
+      color: var(--color-bold);
+    }
   }
   .ratings {
     grid-column: -2 / -1;
@@ -35,3 +44,7 @@ export const TextContainer = styled.div`
     display: flex;
   }
 `;
+
+export const Picture = styled.div`
+  
+`

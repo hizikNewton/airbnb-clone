@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { CardContainer, PictureContainer, TextContainer } from './styled'
+import { CardContainer, Picture, PictureContainer, TextContainer } from './styled'
 import Swiper from 'components/swiper'
 import { CardItemType } from 'types'
 import { ReactComponent as Star } from 'assets/images/icons/star.svg'
@@ -17,7 +17,7 @@ const Card: FC<CardProps> = ({ cardItem }) => {
                 <div className='listingName'>{listingName}</div>
                 <div className='listingWhere'>{listingHost}</div>
                 <div className='date'>{date}</div>
-                <div className='cost'>{cost}</div>
+                <div className='cost'><span>{cost}</span> night</div>
                 <span className='ratings'>
                     <span><Star /></span>
                     {ratings}
@@ -25,7 +25,9 @@ const Card: FC<CardProps> = ({ cardItem }) => {
 
             </TextContainer>
             <PictureContainer>
+                <Picture className='picture'>
                 <Swiper items={listingImages} />
+                </Picture>
             </PictureContainer>
         </CardContainer>
     )
