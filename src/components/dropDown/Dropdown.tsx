@@ -45,8 +45,10 @@ const Dropdown: React.FC<DropdownProps> = ({ options, type }) => {
     return (
         <DropDownContainer ref={dropdownRef} className="dropdown">
             <div className={`dropdown-toggle ${type}`} onClick={toggleDropdown}>
-                {type === "selection" ? selectedOption ? selectedOption.label : 'Select an option' : <Avatar className='avatar' />}
-                <span><Icon name={"search"} width={16} height={16} /></span>
+                {type === "selection" ? selectedOption ? selectedOption.label : 'Select an option' : <span className="user"><Icon name={"menu"} width={16} height={16} />
+                    <Avatar className="avatar" />
+                </span>}
+
             </div>
             {isOpen && (
                 <DDOptions className="dropdown-options">

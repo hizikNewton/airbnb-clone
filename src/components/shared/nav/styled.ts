@@ -52,8 +52,8 @@ export const StyledNavOption = styled.div`
     gap: 8px;
   }
   label {
-    input{
-      visibility:hidden;
+    input {
+      visibility: hidden;
     }
   }
   .chipset {
@@ -64,18 +64,16 @@ export const StyledNavOption = styled.div`
     gap: 8px;
     img {
       opacity: 0.69;
-      
     }
-    &:hover{
-      img{
-      opacity:1;
+    &:hover {
+      img {
+        opacity: 1;
       }
-        font-weight:600;
-        cursor:pointer;
-      }
-    .isActive{
-      font-weight:600
-      
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .isActive {
+      font-weight: 600;
     }
   }
   .active {

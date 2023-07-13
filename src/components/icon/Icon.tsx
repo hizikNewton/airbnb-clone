@@ -1,6 +1,6 @@
 
 import React, { FC } from "react"
-import { Globe, Search } from "assets/images/icons"
+import { Globe, Menu, Search } from "assets/images/icons"
 import { IconType } from "types"
 
 interface IconProps extends React.HTMLAttributes<HTMLElement> {
@@ -12,7 +12,8 @@ interface IconProps extends React.HTMLAttributes<HTMLElement> {
 }
 export const Icons = {
   search: <Search />,
-  globe: <Globe />
+  globe: <Globe />,
+  menu: <Menu />
 };
 const Icon: FC<IconProps> = ({ name, width = 20, height = 20, fill = "#5D6C76", className }) => {
   // Import or define your SVG icons as React components

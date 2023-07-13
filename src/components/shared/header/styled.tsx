@@ -5,6 +5,11 @@ export const HeaderContainer = styled.header`
     justify-content:space-between;
     align-items:center;
     height:8rem;
+    position:fixed;
+    width:calc(100vw - 16rem);
+    top: 0;
+    z-index: 2;
+    background: white;
     .header_search{
         background-color: #fff;
         border: 1px solid var(--bg-color);

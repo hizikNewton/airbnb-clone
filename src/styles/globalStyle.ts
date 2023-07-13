@@ -13,7 +13,7 @@ ${normalize}
 --h-x-sf-jw:4px;
 --text-color-bold:#222222;
 --bg-color:#dddddd;
---border-radius:12px;
+--border-radius:24px;
 
 
   @media (min-width: 550px) {

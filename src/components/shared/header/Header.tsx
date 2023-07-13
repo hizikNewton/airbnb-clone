@@ -10,6 +10,7 @@ const Header: FC = () => {
     return (
         <Container>
             <HeaderContainer>
+
                 <div><Logo /></div>
                 <div className='header_search'>
                     <Button text='Anywhere' />

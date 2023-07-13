@@ -9,7 +9,7 @@ const Layout = () => {
     return (
         <LayoutContainer>
             <Header />
-            <Divider/>
+            <Divider className="divider" />
             <Nav />
             <Main>
                 <Outlet />

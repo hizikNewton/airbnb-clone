@@ -44,18 +44,18 @@ interface TypeNavOption {
 
 const NavOption: FC<TypeNavOption> = ({ data, handleChange, selected }) => {
     const { iconLink, name, id } = data
-    const isSelected = id?.toString() === selected 
+    const isSelected = id?.toString() === selected
     return <StyledNavOption>
         <label >
             <input type={"radio"} name="nav" onChange={handleChange} value={id} />
             <div className='chipset'>
                 <span>
                     <img src={iconLink} alt={name} width="24" height="24"></img>
-                    <div><span className={`${isSelected?"isActive":""}`} >{name}</span></div>
+                    <div><span className={`${isSelected ? "isActive" : ""}`} >{name}</span></div>
                 </span>
                 {isSelected && <div className="active" />}
             </div>
-        </label> 
+        </label>
     </StyledNavOption>
 }
 

@@ -4,6 +4,7 @@
   height: 260px;
   touch-action: pan-y;
   position: relative;
+  border-radius: 24px;
 }
 
 .swiper-list {
